@@ -20,6 +20,12 @@ Below are the details of the Key Columns of the Dataset used for the Dashboard :
 - Fare: Fare paid for the ticket.
 - Cabin: Cabin number of the passenger.
 - Embarked: Port where the passenger boarded (C, Q, S).
+
+## Dataset Relationship
+Orders Dataset is the main dataset and also has the relationship with Customers, Location and Products Datasets.
+<img width="402" alt="Dataset Relation" src="https://github.com/Naimuddin74667/Social_Buzz_Dashboard/assets/71082094/03f7de20-87ec-4a5f-a479-fda511b9c537">
+
+
 ## Data Cleaning
 
 **Missing Values:** The below features had the missing values:
