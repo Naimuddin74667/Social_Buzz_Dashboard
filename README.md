@@ -7,7 +7,7 @@ Below are the details of the Key Columns of the Dataset used for the Dashboard :
 ### Content Type Dataset:
 Key Columns are :
 - Content ID: A unique identifier for each content item.
-- User ID: A unique identifier for the user who created the content.
+- User ID: A unique identifier for the user who interacted with the content.
 - Type: The type of content, e.g., "photo."
 - Category: The category or context of the content, e.g., "Studying," "healthy eating."
 - URL: The web address where the content is stored or accessed.
@@ -26,8 +26,12 @@ Key Columns are :
 Reactions Dataset is the main dataset and also has the relationship with Reaction Type and Content.
 <img width="402" alt="Dataset Relation" src="https://github.com/Naimuddin74667/Social_Buzz_Dashboard/assets/71082094/03f7de20-87ec-4a5f-a479-fda511b9c537">
 
-
 ## Data Cleaning
+**Removing Unwanted Values:** The below features are not useful for analysis:
+- *URL* : Provide the web address where the content is stored or accessed is not useful for analysis.
+- *User ID* :  Gives a unique identifier for the user who interacted with the content and it's not useful.
+
+**Dropping Null Values:** *Type* features has 980 missing values i.e. 0.04% of the total data.
 
 **Missing Values:** The below features had the missing values:
 - *Cabin* : I have replaced the Null values with a new Label "Unknown".
