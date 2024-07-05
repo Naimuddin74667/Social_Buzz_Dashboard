@@ -1,28 +1,29 @@
 # Social Buzz Dashboard
 ## Introduction
-
-
-
-
-
-This project contains a **Tableau Dashboard** that provides a detailed analysis and visualization of the Social Buzz dataset, focusing on survival rates, passenger demographics, and key insights.
+This project contains a **Tableau Dashboard** that provides a detailed analysis and visualization of the Social Buzz dataset, focusing on survival Segments, Categories, Content type and key insights.
 ## Datasets
 Below are the details of the Key Columns of the Dataset used for the Dashboard :
-- PassengerId: Unique identifier for each passenger.
-- Survived: Indicates survival (1) or death (0) of the passenger.
-- Pclass: Passenger's class (1st, 2nd, 3rd).
-- Name: Full name of the passenger.
-- Sex: Gender of the passenger.
-- Age: Age of the passenger in years.
-- SibSp: Number of siblings/spouses aboard the Titanic.
-- Parch: Number of parents/children aboard the Titanic.
-- Ticket: Ticket number.
-- Fare: Fare paid for the ticket.
-- Cabin: Cabin number of the passenger.
-- Embarked: Port where the passenger boarded (C, Q, S).
 
+### Content Type Dataset:
+Key Columns are :
+- Content ID: A unique identifier for each content item.
+- User ID: A unique identifier for the user who created the content.
+- Type: The type of content, e.g., "photo."
+- Category: The category or context of the content, e.g., "Studying," "healthy eating."
+- URL: The web address where the content is stored or accessed.
+### Reactions Dataset:
+Key Columns are :
+- Content ID: A unique identifier for each content item.
+- User ID: A unique identifier for the user who interacted with the content.
+- Type: The type of emotion or state associated with the content.
+- Datetime: The date and time when the interaction was recorded.
+### Reaction Type Dataset:
+Key Columns are :
+- Type: The type of emotion or state.
+- Sentiment: The emotional tone (positive, negative, or neutral).
+- Score: The intensity or strength of the emotion, represented as a numerical value.
 ## Dataset Relationship
-Orders Dataset is the main dataset and also has the relationship with Customers, Location and Products Datasets.
+Reactions Dataset is the main dataset and also has the relationship with Reaction Type and Content.
 <img width="402" alt="Dataset Relation" src="https://github.com/Naimuddin74667/Social_Buzz_Dashboard/assets/71082094/03f7de20-87ec-4a5f-a479-fda511b9c537">
 
 
