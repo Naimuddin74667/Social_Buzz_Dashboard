@@ -22,38 +22,25 @@ Key Columns are :
 - Type: The type of emotion or state.
 - Sentiment: The emotional tone (positive, negative, or neutral).
 - Score: The intensity or strength of the emotion, represented as a numerical value.
-## Dataset Relationship
-Reactions Dataset is the main dataset and also has the relationship with Reaction Type and Content.
-<img width="402" alt="Dataset Relation" src="https://github.com/Naimuddin74667/Social_Buzz_Dashboard/assets/71082094/03f7de20-87ec-4a5f-a479-fda511b9c537">
 
 ## Data Cleaning
 **Removing Unwanted Values:** The below features are not useful for analysis:
 - *URL* : Provide the web address where the content is stored or accessed is not useful for analysis.
 - *User ID* :  Gives a unique identifier for the user who interacted with the content and it's not useful.
 
-**Dropping Null Values:** *Type* features has 980 missing values i.e. 0.04% of the total data.
+**Dropping Missing Values:** 
+- *Type* features has 980 missing values i.e. 0.04% of the total data.
 
-**Missing Values:** The below features had the missing values:
-- *Cabin* : I have replaced the Null values with a new Label "Unknown".
-- *Embarked* : I have deleted the Null values as it was just 2 among the entire dataset.
-- *Age* : As the Age feature has some relationship with Passenger Class, I have replaced the Age with the median w.r.t. each Passenger Class.
+**Handling Duplicate Entries & Remane:** 
+- *Category* features has some values that are same but due to minor differences it got duplicated.
 
+## Dataset Relationship
+Reactions Dataset is the main dataset and also has the relationship with Reaction Type and Content.
+<img width="402" alt="Dataset Relation" src="https://github.com/Naimuddin74667/Social_Buzz_Dashboard/assets/71082094/03f7de20-87ec-4a5f-a479-fda511b9c537">
 
-
-**Outliers Values:** The below features had the Outliers values:
-- *Age* : This feature follows Normal Distribution. So, I have used the Standard Deviation Method to handle Outliers.
-- *Fare* : This feature follows Right Skewed Distribution. So, I have used the Inter Quantile Range Method to handle Outliers.
-
-
-<img width="300" height="300" alt="box plot" src="https://github.com/Naimuddin74667/Titanic_Dashboard/assets/71082094/3d131067-8c84-48c0-a929-fa94de928930">
-<img width="450" height="350" alt="Outliers" src="https://github.com/Naimuddin74667/Titanic_Dashboard/assets/71082094/2f299a66-e010-4bc4-a7ae-678057f722cc">
-
-
-
-
-## Titanic Dashboards
+## Social Buzz Dashboards
 <p align="center">
-  <img width="660" height="440" align='centre' alt="Dashboard Image" src="https://github.com/Naimuddin74667/Titanic_Dashboard/assets/71082094/25d6b29f-beae-4dd7-9f27-95e2c0cccd4a">
+  <img width="660" alt="Social Buzz Dashboard" src="https://github.com/Naimuddin74667/Social_Buzz_Dashboard/assets/71082094/85c20b57-83f9-42a6-9f4b-1e44fab69871">
 </p>
 
 
